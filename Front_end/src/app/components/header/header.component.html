@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons *ngIf="activeBackButton" slot="start">
+            <ion-back-button defaultHref="/" text="back" color="primary" mode="ios"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="ion-text-capitalize">{{titulo}}</ion-title>
+
+        <!-- <ion-item>
+            <ion-icon color="primary" slot="end" name="moon-outline"></ion-icon>
+            <ion-toggle slot="end" (ionChange)="cambio()"></ion-toggle>
+        </ion-item> -->
+
+
+    </ion-toolbar>
+</ion-header>

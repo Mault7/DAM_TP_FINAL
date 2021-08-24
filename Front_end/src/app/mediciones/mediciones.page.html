@@ -1,0 +1,16 @@
+<app-header titulo='Mediciones del sensor' [activeBackButton]=true>
+</app-header>
+<ion-content>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Fecha</th>
+            <th>Valor</th>
+        </tr>
+        <tr *ngFor="let m of Mediciones">
+            <td>{{m.medicionId}}</td>
+            <td>{{m.fecha | date:"short" }}</td>
+            <td>{{m.valor}}</td>
+        </tr>
+    </table>
+</ion-content>
